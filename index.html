@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 Stock Market Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h2>Your Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total Value</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolio-table">
+                    <!-- Stocks will be dynamically added -->
+                </tbody>
+            </table>
+            <button onclick="addStock()">➕ Add Stock</button>
+        </section>
+
+        <section class="charts">
+            <h2>📊 Stock Performance</h2>
+            <canvas id="stockChart"></canvas>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
